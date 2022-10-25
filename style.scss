@@ -1,0 +1,189 @@
+$Off-white: hsl(36, 100%, 99%);
+$Grayishblue: hsl(233, 8%, 79%);
+$Darkgrayishblue: hsl(236, 13%, 42%);
+$Verydarkblue: hsl(240, 100%, 5%);
+
+@import '_responsive.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+main{
+    background-color: hsl(36, 100%, 99%);
+    padding: 5rem 9rem 7rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .hamburger{
+                display: none;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+                
+                .menu-wrapper{
+                    .close{
+                        display: none;
+                    }
+                    ul{
+                        display: flex;
+                        gap: 2.5rem;
+                        li{
+                            list-style: none;
+                            color: $Darkgrayishblue;
+                            cursor: pointer;
+                            &:hover{
+                                color: hsl(5, 85%, 63%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .container-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            .top{
+                display: flex;
+                gap:2rem;
+                .left{
+                    width: 68%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    .banner{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .banner-moblie{
+                        display: none;
+                    }
+                    .content{
+                        display: flex;
+                        align-items: center;
+                        .topic{
+                            width: 50%;
+                            font-size: 2rem;
+                            font-weight: 800;
+                            padding-right: 4rem;
+                            line-height: 3rem;
+                            margin-bottom: 1rem;
+                        }
+                        .read-more{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            
+                            p{
+                                color: $Darkgrayishblue;
+                                line-height: 1.5rem;
+                            }
+                            .button{
+                                text-align: center;
+                                color: white;
+                                padding: 1rem 0rem;
+                                letter-spacing: 0.4rem;
+                                font-weight: 700;
+                                width: 200px;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                background-color: hsl(5, 85%, 63%);
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+                .right{
+                    background-color: $Verydarkblue;
+                    width: 32%;
+                    padding: 1.5rem 1.5rem 0rem 1.5rem;
+                    hr{
+                        border: 0.5px solid $Darkgrayishblue;
+                        
+                    }
+                    
+                    h3{
+                        color: hsl(35, 77%, 62%);
+                        font-size: 2rem;
+                        
+                    }
+                    .blog{
+                        color: white;
+                        padding: 1.8rem 0rem;
+                        h4{
+                            font-size: 18px;
+                            cursor: pointer;
+                            &:hover{
+                                color: hsl(35, 77%, 62%);
+                            }
+                        }
+                        
+                        p{
+                            font-size: 14px;
+                            color: $Grayishblue;
+                            line-height: 1.5rem;
+                            padding: 1rem 2rem 0rem 0rem;
+                        }
+                    }
+                    
+                }
+                
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+                .post{
+                    width: 33%;
+                    display: flex;
+                    gap: 1.5rem;
+                    img{
+                        width: 100px;
+                    }
+                    .post-content{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .num{
+                            font-size: 28px;
+                            color: $Grayishblue;
+                            font-weight: 700;
+                        }
+                        .title{
+                            font-weight: 700;
+                            font-size: 16px;
+                            cursor: pointer;
+                            &:hover{
+                                color: hsl(5, 85%, 63%);
+                            }
+                        }
+                        p{
+                            color: $Darkgrayishblue;
+                            line-height: 1.5rem;
+                            font-size: 13px;
+                            padding-right: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

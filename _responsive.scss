@@ -1,0 +1,107 @@
+@media screen and(max-width:1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Inter', sans-serif;
+        main{
+            padding: 2rem 1.5rem 2rem 1.5rem;
+            background-color: none;
+           .container{
+            .header{
+                width: 100%;
+                position: relative;
+                .hamburger{
+                    display: flex;
+                }
+                .menu{
+                    
+                    position: fixed;
+                    width: 100vw;
+                    height: 100vh;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.498);
+                    
+                    .menu-wrapper{
+                        padding: 2rem 2rem;
+                        position: fixed;
+                        width: 250px;
+                        height: 100vh;
+                        top: 0;
+                        right: 0;
+                        background-color: black;
+                        background-color: white;
+                        .close{
+                            display: flex;
+                            justify-content: end;
+                            margin-bottom: 5rem;
+                        }
+                        ul{
+                            flex-direction: column;
+                            gap: 2rem;
+                            li{
+                                font-size: 20px;
+                                color: $Darkgrayishblue;
+                                
+                            }
+                        }
+                    }
+                }
+                .hidden{
+                    display: none;
+                }
+            }
+            .container-wrapper{
+                .top{
+                    flex-direction: column;
+                    gap: 4rem;
+                    .left{
+                        width: 100%;
+                        .banner{
+                            display: none;
+                        }
+                        .banner-moblie{
+                            display: block;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .content{
+                            flex-direction: column;
+                            
+                            .topic{
+                                width: 100%;
+                                padding-right: unset;
+                            }
+                            .read-more{
+                                width: 100%;
+                                p{
+                                    line-height: 2rem;
+                                }
+                                .button{
+                                    margin-top: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+                .bottom{
+                    flex-direction: column;
+                    padding-bottom: 4rem;
+                    .post{
+                        width: 100%;
+                        flex-direction: row;
+                    }
+                }
+            }
+           }
+        }
+    }
+    
+}
